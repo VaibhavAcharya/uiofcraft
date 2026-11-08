@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckIcon } from "lucide-react";
+import { CheckIcon } from "@phosphor-icons/react/ssr";
 import { useId } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";

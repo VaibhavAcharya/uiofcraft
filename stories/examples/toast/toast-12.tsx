@@ -1,12 +1,12 @@
 "use client";
 
-import { SaveIcon } from "lucide-react";
+import { FloppyDiskIcon } from "@phosphor-icons/react/ssr";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { anchoredToastManager } from "@/components/ui/toast";
 import { Tooltip, TooltipPopup, TooltipTrigger } from "@/components/ui/tooltip";
 
-const ANCHORED_SAVE_TOAST_ID = "coss-demo-anchored-save-toast";
+const ANCHORED_SAVE_TOAST_ID = "uiofcraft-demo-anchored-save-toast";
 
 export default function Particle() {
   const saveButtonRef = useRef<HTMLButtonElement>(null);
@@ -42,7 +42,7 @@ export default function Particle() {
           />
         }
       >
-        <SaveIcon aria-hidden="true" />
+        <FloppyDiskIcon aria-hidden="true" />
       </TooltipTrigger>
       <TooltipPopup>
         <p>Save</p>

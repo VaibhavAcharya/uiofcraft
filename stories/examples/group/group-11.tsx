@@ -1,4 +1,4 @@
-import { ChevronDownIcon, GitForkIcon } from "lucide-react";
+import { CaretDownIcon, GitForkIcon } from "@phosphor-icons/react/ssr";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Group, GroupSeparator } from "@/components/ui/group";
@@ -25,7 +25,7 @@ export default function Particle() {
             <Button aria-label="Send options" size="icon" variant="outline" />
           }
         >
-          <ChevronDownIcon aria-hidden="true" />
+          <CaretDownIcon aria-hidden="true" />
         </PopoverTrigger>
         <PopoverPopup align="end" className="w-64">
           <PopoverTitle className="text-base">Existing forks</PopoverTitle>

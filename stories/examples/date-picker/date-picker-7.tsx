@@ -1,7 +1,7 @@
 "use client";
 
+import { CalendarBlankIcon } from "@phosphor-icons/react/ssr";
 import { format } from "date-fns";
-import { CalendarIcon } from "lucide-react";
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -16,7 +16,7 @@ export default function Particle() {
       <PopoverTrigger
         render={<Button className="w-full justify-start" variant="outline" />}
       >
-        <CalendarIcon className="shrink-0" />
+        <CalendarBlankIcon className="shrink-0" />
         <span className="flex flex-wrap gap-1">
           {dates && dates.length > 0 ? (
             <>

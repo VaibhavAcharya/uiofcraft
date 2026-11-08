@@ -1,6 +1,6 @@
 "use client";
 
-import { SearchIcon } from "lucide-react";
+import { MagnifyingGlassIcon } from "@phosphor-icons/react/ssr";
 import { useMemo } from "react";
 import {
   Combobox,
@@ -59,7 +59,7 @@ export default function Particle() {
             className="rounded-md before:rounded-[calc(var(--radius-md)-1px)]"
             placeholder="e.g. Europe/London"
             showTrigger={false}
-            startAddon={<SearchIcon />}
+            startAddon={<MagnifyingGlassIcon />}
           />
         </div>
         <ComboboxEmpty>No timezones found.</ComboboxEmpty>

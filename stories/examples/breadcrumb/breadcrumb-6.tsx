@@ -1,4 +1,4 @@
-import { HomeIcon } from "lucide-react";
+import { HouseIcon } from "@phosphor-icons/react/ssr";
 import Link from "next/link";
 import {
   Breadcrumb,
@@ -15,7 +15,7 @@ export default function Particle() {
       <BreadcrumbList>
         <BreadcrumbItem>
           <BreadcrumbLink aria-label="Home" render={<Link href="/" />}>
-            <HomeIcon aria-hidden="true" className="size-4" />
+            <HouseIcon aria-hidden="true" className="size-4" />
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator> · </BreadcrumbSeparator>

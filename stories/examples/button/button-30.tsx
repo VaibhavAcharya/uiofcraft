@@ -1,4 +1,4 @@
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRightIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 
 export default function Particle() {

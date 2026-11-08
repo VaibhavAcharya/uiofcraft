@@ -1,6 +1,6 @@
 "use client";
 
-import { BookmarkIcon } from "lucide-react";
+import { BookmarkSimpleIcon } from "@phosphor-icons/react/ssr";
 import { useRef, useState } from "react";
 import { anchoredToastManager } from "@/components/ui/toast";
 import { Toggle } from "@/components/ui/toggle";
@@ -45,7 +45,7 @@ export default function Particle() {
               onPressedChange={handleToggleChange}
               pressed={bookmarked}
             >
-              <BookmarkIcon aria-hidden="true" />
+              <BookmarkSimpleIcon aria-hidden="true" />
             </Toggle>
           </div>
         }

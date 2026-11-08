@@ -1,6 +1,6 @@
 "use client";
 
-import { InfoIcon, StarIcon } from "lucide-react";
+import { InfoIcon, StarIcon } from "@phosphor-icons/react/ssr";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {

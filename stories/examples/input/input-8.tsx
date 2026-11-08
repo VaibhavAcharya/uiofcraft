@@ -1,4 +1,4 @@
-import { InfoIcon } from "lucide-react";
+import { InfoIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   InputGroup,
@@ -13,7 +13,7 @@ export default function Particle() {
       <InputGroupInput
         aria-label="Set your URL"
         className="*:[input]:ps-0!"
-        placeholder="coss.com"
+        placeholder="uiofcraft.com"
         type="text"
       />
       <InputGroupAddon>https://</InputGroupAddon>

@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDownIcon, ChevronUpIcon } from "lucide-react";
+import { CaretDownIcon, CaretUpIcon } from "@phosphor-icons/react/ssr";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -21,9 +21,9 @@ export default function Particle() {
     >
       {isExpanded ? "Show less" : "Show more"}
       {isExpanded ? (
-        <ChevronUpIcon aria-hidden="true" className="-me-1" />
+        <CaretUpIcon aria-hidden="true" className="-me-1" />
       ) : (
-        <ChevronDownIcon aria-hidden="true" className="-me-1" />
+        <CaretDownIcon aria-hidden="true" className="-me-1" />
       )}
     </Button>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import { SearchIcon } from "lucide-react";
+import { MagnifyingGlassIcon } from "@phosphor-icons/react/ssr";
 import {
   Combobox,
   ComboboxEmpty,
@@ -38,7 +38,7 @@ export default function Particle() {
             className="rounded-md before:rounded-[calc(var(--radius-md)-1px)]"
             placeholder="Search fruits..."
             showTrigger={false}
-            startAddon={<SearchIcon />}
+            startAddon={<MagnifyingGlassIcon />}
           />
         </div>
         <ComboboxEmpty>No items found.</ComboboxEmpty>

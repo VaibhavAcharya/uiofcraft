@@ -1,7 +1,7 @@
 "use client";
 
+import { CalendarBlankIcon } from "@phosphor-icons/react/ssr";
 import { format, isValid, parse } from "date-fns";
-import { CalendarIcon } from "lucide-react";
 import { useState } from "react";
 import { Calendar } from "@/components/ui/calendar";
 import { Field, FieldLabel } from "@/components/ui/field";
@@ -64,7 +64,7 @@ export default function Particle() {
             value={inputValue}
           />
           <InputGroupAddon>
-            <CalendarIcon aria-hidden="true" />
+            <CalendarBlankIcon aria-hidden="true" />
           </InputGroupAddon>
         </InputGroup>
       </Field>

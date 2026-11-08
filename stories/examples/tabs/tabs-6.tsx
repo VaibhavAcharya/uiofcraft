@@ -1,4 +1,4 @@
-import { HouseIcon, PanelsTopLeftIcon, SettingsIcon } from "lucide-react";
+import { GearIcon, HouseIcon, LayoutIcon } from "@phosphor-icons/react/ssr";
 import { Tabs, TabsList, TabsPanel, TabsTab } from "@/components/ui/tabs";
 
 export default function Particle() {
@@ -10,11 +10,11 @@ export default function Particle() {
           Overview
         </TabsTab>
         <TabsTab value="tab-2">
-          <PanelsTopLeftIcon aria-hidden="true" />
+          <LayoutIcon aria-hidden="true" />
           Projects
         </TabsTab>
         <TabsTab value="tab-3">
-          <SettingsIcon aria-hidden="true" />
+          <GearIcon aria-hidden="true" />
           Settings
         </TabsTab>
       </TabsList>

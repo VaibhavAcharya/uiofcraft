@@ -2,11 +2,11 @@
 
 import {
   CopyIcon,
-  EllipsisIcon,
-  PencilIcon,
-  ShareIcon,
+  DotsThreeIcon,
+  ExportIcon,
+  PencilSimpleIcon,
   TrashIcon,
-} from "lucide-react";
+} from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   Drawer,
@@ -58,7 +58,7 @@ export default function Particle() {
             />
           }
         >
-          <EllipsisIcon aria-hidden />
+          <DotsThreeIcon aria-hidden />
         </DrawerTrigger>
         <DrawerPopup showBar>
           <DrawerPanel>
@@ -66,7 +66,7 @@ export default function Particle() {
               <DrawerMenuGroup>
                 <DrawerMenuGroupLabel>Actions</DrawerMenuGroupLabel>
                 <DrawerClose render={<DrawerMenuItem />}>
-                  <PencilIcon aria-hidden />
+                  <PencilSimpleIcon aria-hidden />
                   Edit
                 </DrawerClose>
                 <DrawerClose render={<DrawerMenuItem />}>
@@ -74,7 +74,7 @@ export default function Particle() {
                   Duplicate
                 </DrawerClose>
                 <DrawerClose render={<DrawerMenuItem />}>
-                  <ShareIcon aria-hidden />
+                  <ExportIcon aria-hidden />
                   Share
                 </DrawerClose>
               </DrawerMenuGroup>
@@ -186,13 +186,13 @@ export default function Particle() {
           />
         }
       >
-        <EllipsisIcon aria-hidden />
+        <DotsThreeIcon aria-hidden />
       </MenuTrigger>
       <MenuPopup>
         <MenuGroup>
           <MenuGroupLabel>Actions</MenuGroupLabel>
           <MenuItem>
-            <PencilIcon aria-hidden />
+            <PencilSimpleIcon aria-hidden />
             Edit
           </MenuItem>
           <MenuItem>
@@ -200,7 +200,7 @@ export default function Particle() {
             Duplicate
           </MenuItem>
           <MenuItem>
-            <ShareIcon aria-hidden />
+            <ExportIcon aria-hidden />
             Share
           </MenuItem>
         </MenuGroup>

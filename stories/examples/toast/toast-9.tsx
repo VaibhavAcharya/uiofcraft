@@ -1,6 +1,6 @@
 "use client";
 
-import { DownloadIcon } from "lucide-react";
+import { DownloadSimpleIcon } from "@phosphor-icons/react/ssr";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { toastManager } from "@/components/ui/toast";
@@ -95,7 +95,7 @@ export default function Particle() {
         </>
       ) : (
         <>
-          <DownloadIcon />
+          <DownloadSimpleIcon />
           Download
         </>
       )}

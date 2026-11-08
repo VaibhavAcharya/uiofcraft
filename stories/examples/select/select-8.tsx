@@ -1,4 +1,4 @@
-import { CableIcon } from "lucide-react";
+import { PlugIcon } from "@phosphor-icons/react/ssr";
 import {
   Select,
   SelectItem,
@@ -17,7 +17,7 @@ export default function Particle() {
   return (
     <Select defaultValue="next" items={items}>
       <SelectTrigger aria-label="Select framework with icon">
-        <CableIcon aria-hidden="true" />
+        <PlugIcon aria-hidden="true" />
         <SelectValue />
       </SelectTrigger>
       <SelectPopup alignItemWithTrigger={false}>

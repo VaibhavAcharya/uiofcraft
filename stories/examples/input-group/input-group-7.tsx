@@ -1,6 +1,6 @@
 "use client";
 
-import { InfoIcon } from "lucide-react";
+import { InfoIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   InputGroup,

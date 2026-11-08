@@ -1,4 +1,4 @@
-import { EllipsisIcon } from "lucide-react";
+import { DotsThreeIcon } from "@phosphor-icons/react/ssr";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -12,7 +12,7 @@ export default function Particle() {
   return (
     <InputGroup>
       <InputGroupInput
-        defaultValue="hello@coss.com"
+        defaultValue="hello@uiofcraft.com"
         placeholder="Enter email"
         type="email"
       />
@@ -24,7 +24,7 @@ export default function Particle() {
               <Button aria-label="Open menu" size="icon-xs" variant="ghost" />
             }
           >
-            <EllipsisIcon />
+            <DotsThreeIcon />
           </MenuTrigger>
           <MenuPopup align="end" alignOffset={-4} sideOffset={8}>
             <MenuItem disabled>Make Primary</MenuItem>

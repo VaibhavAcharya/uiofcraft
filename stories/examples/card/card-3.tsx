@@ -1,6 +1,6 @@
 "use client";
 
-import { ShieldAlertIcon } from "lucide-react";
+import { ShieldWarningIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -41,7 +41,7 @@ export default function Particle() {
       </CardPanel>
       <CardFooter className="border-t">
         <div className="flex gap-1 text-muted-foreground text-xs">
-          <ShieldAlertIcon className="size-3 h-lh shrink-0" />
+          <ShieldWarningIcon className="size-3 h-lh shrink-0" />
           <p>The information you enter is encrypted and stored securely.</p>
         </div>
       </CardFooter>

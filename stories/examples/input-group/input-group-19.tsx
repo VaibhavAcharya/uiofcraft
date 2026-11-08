@@ -1,6 +1,6 @@
 "use client";
 
-import { BoldIcon, ItalicIcon, LinkIcon } from "lucide-react";
+import { LinkIcon, TextBIcon, TextItalicIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   InputGroup,
@@ -18,10 +18,10 @@ export default function Particle() {
         className="gap-1 rounded-t-lg border-b bg-muted/72 p-2!"
       >
         <Toggle aria-label="Toggle bold" size="sm">
-          <BoldIcon aria-hidden="true" />
+          <TextBIcon aria-hidden="true" />
         </Toggle>
         <Toggle aria-label="Toggle italic" size="sm">
-          <ItalicIcon aria-hidden="true" />
+          <TextItalicIcon aria-hidden="true" />
         </Toggle>
         <Button aria-label="Link" size="icon-sm" variant="ghost">
           <LinkIcon aria-hidden="true" />

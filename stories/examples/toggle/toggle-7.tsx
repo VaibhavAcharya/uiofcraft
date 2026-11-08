@@ -1,17 +1,21 @@
-import { BoldIcon, ItalicIcon, UnderlineIcon } from "lucide-react";
+import {
+  TextBIcon,
+  TextItalicIcon,
+  TextUnderlineIcon,
+} from "@phosphor-icons/react/ssr";
 import { Toggle } from "@/components/ui/toggle";
 
 export default function Particle() {
   return (
     <div className="flex items-center gap-1">
       <Toggle aria-label="Toggle bold" variant="outline">
-        <BoldIcon />
+        <TextBIcon />
       </Toggle>
       <Toggle aria-label="Toggle italic" variant="outline">
-        <ItalicIcon />
+        <TextItalicIcon />
       </Toggle>
       <Toggle aria-label="Toggle underline" variant="outline">
-        <UnderlineIcon />
+        <TextUnderlineIcon />
       </Toggle>
     </div>
   );

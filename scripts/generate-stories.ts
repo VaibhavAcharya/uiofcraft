@@ -45,6 +45,20 @@ const rewriteImports = (code: string) =>
     .replaceAll("@/registry/default/chat-demo/", "./")
     .replaceAll('process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ""', '""');
 
+const rebrand = (text: string) =>
+  text
+    .replaceAll(
+      "https://coss.com",
+      "https://github.com/VaibhavAcharya/uiofcraft",
+    )
+    .replaceAll("coss.com/ui", "uiofcraft")
+    .replaceAll("coss ui", "uiofcraft")
+    .replaceAll(
+      "Beautifully designed components that you can copy and paste into\n              your apps.",
+      "Shared React components, styles and fonts.",
+    )
+    .replace(/\bcoss/g, "uiofcraft");
+
 async function fetchJson<T>(url: string): Promise<T> {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`${response.status} ${url}`);
@@ -135,14 +149,14 @@ for (const item of items) {
     const target = fileName.startsWith("p-")
       ? `${group}-${number}.tsx`
       : fileName;
-    writeFileSync(join(dir, target), rewriteImports(file.content));
+    writeFileSync(join(dir, target), rebrand(rewriteImports(file.content)));
   }
 
   const examples = examplesByComponent.get(component) ?? [];
   examples.push({
     group,
     number: Number(number),
-    description: item.description,
+    description: rebrand(item.description),
     previewClassName: item.meta?.className,
   });
   examplesByComponent.set(component, examples);
@@ -157,6 +171,34 @@ for (const [component, examples] of examplesByComponent) {
     storyFile(component, examples),
   );
 }
+
+const firstExamples = [...examplesByComponent]
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([component, examples]) => ({ component, example: examples[0] }));
+
+writeFileSync(
+  join(examplesDir, "index.ts"),
+  `${firstExamples
+    .map(
+      ({ component, example }) =>
+        `import ${exampleId(example)} from "./${component}/${example.group}-${example.number}";`,
+    )
+    .join("\n")}
+
+export const firstExamples = [
+${firstExamples
+  .map(
+    ({ component, example }) => `  {
+    title: ${JSON.stringify(titleCase(component))},
+    description: ${JSON.stringify(example.description)},
+    previewClassName: ${JSON.stringify(example.previewClassName ?? "")},
+    Example: ${exampleId(example)},
+  },`,
+  )
+  .join("\n")}
+];
+`,
+);
 
 console.log(
   `${items.length} examples in ${examplesByComponent.size} story files`,

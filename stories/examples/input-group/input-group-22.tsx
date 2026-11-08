@@ -1,6 +1,6 @@
 "use client";
 
-import { XIcon } from "lucide-react";
+import { XIcon } from "@phosphor-icons/react/ssr";
 import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import {

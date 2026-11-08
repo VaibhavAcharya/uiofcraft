@@ -1,6 +1,11 @@
 "use client";
 
 import {
+  AirplaneTakeoffIcon,
+  CaretDownIcon,
+  CaretUpIcon,
+} from "@phosphor-icons/react/ssr";
+import {
   type ColumnDef,
   columnSizingFeature,
   columnVisibilityFeature,
@@ -15,7 +20,6 @@ import {
   tableFeatures,
   useTable,
 } from "@tanstack/react-table";
-import { ChevronDownIcon, ChevronUpIcon, PlaneTakeoffIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -187,7 +191,7 @@ const columns: ColumnDef<typeof features, Flight>[] = [
     accessorKey: "terminal",
     cell: ({ row }) => (
       <Badge className="font-normal tabular-nums" size="lg" variant="outline">
-        <PlaneTakeoffIcon />
+        <AirplaneTakeoffIcon />
         <span>{row.getValue("terminal")}</span>
       </Badge>
     ),
@@ -272,13 +276,13 @@ export default function Particle() {
                         )}
                         {{
                           asc: (
-                            <ChevronUpIcon
+                            <CaretUpIcon
                               aria-hidden="true"
                               className="size-4 shrink-0 opacity-80"
                             />
                           ),
                           desc: (
-                            <ChevronDownIcon
+                            <CaretDownIcon
                               aria-hidden="true"
                               className="size-4 shrink-0 opacity-80"
                             />

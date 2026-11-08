@@ -1,6 +1,11 @@
 "use client";
 
-import { CheckIcon, EyeIcon, EyeOffIcon, XIcon } from "lucide-react";
+import {
+  CheckIcon,
+  EyeIcon,
+  EyeSlashIcon,
+  XIcon,
+} from "@phosphor-icons/react/ssr";
 import { useId, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -67,7 +72,7 @@ export default function Particle() {
               variant="ghost"
             >
               {isVisible ? (
-                <EyeOffIcon aria-hidden="true" />
+                <EyeSlashIcon aria-hidden="true" />
               ) : (
                 <EyeIcon aria-hidden="true" />
               )}

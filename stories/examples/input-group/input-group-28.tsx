@@ -1,6 +1,6 @@
 "use client";
 
-import { ImageIcon, PaperclipIcon } from "lucide-react";
+import { ImageIcon, PaperclipIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   InputGroup,

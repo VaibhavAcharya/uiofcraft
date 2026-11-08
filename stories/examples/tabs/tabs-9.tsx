@@ -1,4 +1,4 @@
-import { BoxIcon, HouseIcon, PanelsTopLeftIcon } from "lucide-react";
+import { CubeIcon, HouseIcon, LayoutIcon } from "@phosphor-icons/react/ssr";
 import { Tabs, TabsList, TabsPanel, TabsTab } from "@/components/ui/tabs";
 
 export default function Particle() {
@@ -17,18 +17,14 @@ export default function Particle() {
             className="h-auto! flex-col gap-1.5 py-[calc(--spacing(2)-1px)]"
             value="tab-2"
           >
-            <PanelsTopLeftIcon
-              aria-hidden="true"
-              className="opacity-60"
-              size={16}
-            />
+            <LayoutIcon aria-hidden="true" className="opacity-60" size={16} />
             Projects
           </TabsTab>
           <TabsTab
             className="h-auto! flex-col gap-1.5 py-[calc(--spacing(2.5)-1px)]"
             value="tab-3"
           >
-            <BoxIcon aria-hidden="true" className="opacity-60" size={16} />
+            <CubeIcon aria-hidden="true" className="opacity-60" size={16} />
             Packages
           </TabsTab>
         </TabsList>

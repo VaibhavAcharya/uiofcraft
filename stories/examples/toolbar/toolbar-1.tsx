@@ -1,12 +1,12 @@
 "use client";
 
 import {
-  AlignCenterIcon,
-  AlignLeftIcon,
-  AlignRightIcon,
-  DollarSignIcon,
+  CurrencyDollarIcon,
   PercentIcon,
-} from "lucide-react";
+  TextAlignCenterIcon,
+  TextAlignLeftIcon,
+  TextAlignRightIcon,
+} from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   Select,
@@ -47,7 +47,7 @@ export default function Particle() {
                   aria-label="Align left"
                   render={<ToggleGroupItem value="left" />}
                 >
-                  <AlignLeftIcon />
+                  <TextAlignLeftIcon />
                 </ToolbarButton>
               }
             />
@@ -65,7 +65,7 @@ export default function Particle() {
                     />
                   }
                 >
-                  <AlignCenterIcon />
+                  <TextAlignCenterIcon />
                 </ToolbarButton>
               }
             />
@@ -80,7 +80,7 @@ export default function Particle() {
                     <ToggleGroupItem aria-label="Toggle right" value="right" />
                   }
                 >
-                  <AlignRightIcon />
+                  <TextAlignRightIcon />
                 </ToolbarButton>
               }
             />
@@ -96,7 +96,7 @@ export default function Particle() {
                   aria-label="Format as currency"
                   render={<Button size="icon" variant="ghost" />}
                 >
-                  <DollarSignIcon />
+                  <CurrencyDollarIcon />
                 </ToolbarButton>
               }
             />

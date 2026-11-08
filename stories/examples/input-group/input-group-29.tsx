@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRightIcon, MicIcon } from "lucide-react";
+import { ArrowRightIcon, MicrophoneIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   InputGroup,
@@ -26,7 +26,7 @@ export default function Particle() {
               />
             }
           >
-            <MicIcon />
+            <MicrophoneIcon />
           </TooltipTrigger>
           <TooltipPopup>Record voice message</TooltipPopup>
         </Tooltip>

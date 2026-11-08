@@ -1,6 +1,6 @@
 "use client";
 
-import { SearchIcon } from "lucide-react";
+import { MagnifyingGlassIcon } from "@phosphor-icons/react/ssr";
 import {
   Autocomplete,
   AutocompleteEmpty,
@@ -29,7 +29,7 @@ export default function Particle() {
       <AutocompleteInput
         aria-label="Search items"
         placeholder="Search items…"
-        startAddon={<SearchIcon />}
+        startAddon={<MagnifyingGlassIcon />}
       />
       <AutocompletePopup>
         <AutocompleteEmpty>No items found.</AutocompleteEmpty>

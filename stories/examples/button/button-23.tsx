@@ -1,4 +1,4 @@
-import { ThumbsUpIcon } from "lucide-react";
+import { ThumbsUpIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 
 export default function Particle() {

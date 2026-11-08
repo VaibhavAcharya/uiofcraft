@@ -1,4 +1,4 @@
-import { CornerUpLeftIcon, StarIcon } from "lucide-react";
+import { ArrowBendUpLeftIcon, StarIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   PreviewCard,
@@ -10,15 +10,14 @@ export default function Particle() {
   return (
     <PreviewCard>
       <PreviewCardTrigger render={<Button variant="ghost" />}>
-        coss.com/ui
+        uiofcraft
       </PreviewCardTrigger>
       <PreviewCardPopup>
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
-            <h4 className="font-medium text-sm">coss.com/ui</h4>
+            <h4 className="font-medium text-sm">uiofcraft</h4>
             <p className="text-muted-foreground text-sm">
-              Beautifully designed components that you can copy and paste into
-              your apps.
+              Shared React components, styles and fonts.
             </p>
           </div>
           <div className="flex items-center gap-4 text-muted-foreground text-xs">
@@ -34,7 +33,7 @@ export default function Particle() {
               <span>58.2k</span>
             </div>
             <div className="flex items-center gap-1">
-              <CornerUpLeftIcon className="size-3" />
+              <ArrowBendUpLeftIcon className="size-3" />
               <span>5.1k</span>
             </div>
           </div>

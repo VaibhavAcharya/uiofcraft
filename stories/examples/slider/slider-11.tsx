@@ -1,6 +1,6 @@
 "use client";
 
-import { Volume2Icon, VolumeXIcon } from "lucide-react";
+import { SpeakerHighIcon, SpeakerXIcon } from "@phosphor-icons/react/ssr";
 import { useState } from "react";
 import { Field, FieldLabel } from "@/components/ui/field";
 import { Slider, SliderValue } from "@/components/ui/slider";
@@ -15,11 +15,11 @@ export default function Particle() {
           <FieldLabel>Volume</FieldLabel>
           <SliderValue />
         </div>
-        <VolumeXIcon
+        <SpeakerXIcon
           aria-hidden="true"
           className="size-4 shrink-0 opacity-80"
         />
-        <Volume2Icon
+        <SpeakerHighIcon
           aria-hidden="true"
           className="order-1 size-4 shrink-0 opacity-80"
         />

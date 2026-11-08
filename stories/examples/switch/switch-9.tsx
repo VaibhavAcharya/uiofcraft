@@ -1,6 +1,11 @@
 "use client";
 
-import { CopyIcon, PlusIcon, SearchIcon, XIcon } from "lucide-react";
+import {
+  CopyIcon,
+  MagnifyingGlassIcon,
+  PlusIcon,
+  XIcon,
+} from "@phosphor-icons/react/ssr";
 import { useId, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -120,7 +125,7 @@ function TimeCombobox({
             placeholder="Search time"
             showTrigger={false}
             size="sm"
-            startAddon={<SearchIcon />}
+            startAddon={<MagnifyingGlassIcon />}
           />
         </div>
         <ComboboxEmpty>No times found.</ComboboxEmpty>

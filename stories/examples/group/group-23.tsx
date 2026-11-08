@@ -1,11 +1,11 @@
 "use client";
 
 import {
-  ChevronsUpDownIcon,
+  CaretUpDownIcon,
   FunnelIcon,
-  SearchIcon,
+  MagnifyingGlassIcon,
   XIcon,
-} from "lucide-react";
+} from "@phosphor-icons/react/ssr";
 import { useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -153,7 +153,7 @@ export default function Particle() {
         >
           {renderTriggerContent()}
           {selectedMembers.length === 0 && (
-            <ChevronsUpDownIcon className="-me-1!" />
+            <CaretUpDownIcon className="-me-1!" />
           )}
         </ComboboxTrigger>
         <ComboboxPopup aria-label="Select member">
@@ -162,7 +162,7 @@ export default function Particle() {
               className="rounded-md before:rounded-[calc(var(--radius-md)-1px)]"
               placeholder="Search members..."
               showTrigger={false}
-              startAddon={<SearchIcon />}
+              startAddon={<MagnifyingGlassIcon />}
             />
           </div>
           <ComboboxEmpty>No members found.</ComboboxEmpty>

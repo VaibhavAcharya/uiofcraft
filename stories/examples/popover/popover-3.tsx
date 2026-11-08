@@ -1,6 +1,6 @@
 "use client";
 
-import { BellIcon, UserIcon } from "lucide-react";
+import { BellIcon, UserIcon } from "@phosphor-icons/react/ssr";
 import type { ComponentType } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";

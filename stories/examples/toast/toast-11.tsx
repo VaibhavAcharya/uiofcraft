@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { toastManager } from "@/components/ui/toast";
 
-const ERROR_TOAST_ID = "coss-demo-error-upsert";
+const ERROR_TOAST_ID = "uiofcraft-demo-error-upsert";
 
 export default function Particle() {
   return (

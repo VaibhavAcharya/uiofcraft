@@ -2,10 +2,10 @@
 
 import {
   ArrowUpIcon,
-  SparklesIcon,
-  UserRoundIcon,
-  UsersRoundIcon,
-} from "lucide-react";
+  SparkleIcon,
+  UserCircleIcon,
+  UsersIcon,
+} from "@phosphor-icons/react/ssr";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -68,11 +68,11 @@ export default function Particle() {
               variant="chip"
               icon={
                 token.type === "action" ? (
-                  <SparklesIcon aria-hidden="true" />
+                  <SparkleIcon aria-hidden="true" />
                 ) : token.kind === "team" ? (
-                  <UsersRoundIcon aria-hidden="true" />
+                  <UsersIcon aria-hidden="true" />
                 ) : (
-                  <UserRoundIcon aria-hidden="true" />
+                  <UserCircleIcon aria-hidden="true" />
                 )
               }
             />
@@ -83,17 +83,14 @@ export default function Particle() {
             {(item: ComposerItemValue) => (
               <ComposerItem key={item.id} value={item}>
                 {item.type === "action" ? (
-                  <SparklesIcon
+                  <SparkleIcon
                     aria-hidden="true"
                     className="size-4 opacity-80"
                   />
                 ) : item.kind === "team" ? (
-                  <UsersRoundIcon
-                    aria-hidden="true"
-                    className="size-4 opacity-80"
-                  />
+                  <UsersIcon aria-hidden="true" className="size-4 opacity-80" />
                 ) : (
-                  <UserRoundIcon
+                  <UserCircleIcon
                     aria-hidden="true"
                     className="size-4 opacity-80"
                   />

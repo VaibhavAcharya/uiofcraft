@@ -1,4 +1,4 @@
-import { SearchIcon } from "lucide-react";
+import { MagnifyingGlassIcon } from "@phosphor-icons/react/ssr";
 import {
   InputGroup,
   InputGroupAddon,
@@ -15,7 +15,7 @@ export default function Particle() {
         type="search"
       />
       <InputGroupAddon>
-        <SearchIcon aria-hidden="true" />
+        <MagnifyingGlassIcon aria-hidden="true" />
       </InputGroupAddon>
     </InputGroup>
   );

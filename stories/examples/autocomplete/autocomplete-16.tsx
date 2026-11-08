@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPinIcon } from "lucide-react";
+import { MapPinIcon } from "@phosphor-icons/react/ssr";
 import type { ReactNode } from "react";
 import { useEffect, useRef, useState } from "react";
 import {

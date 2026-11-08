@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDownIcon } from "lucide-react";
+import { CaretDownIcon } from "@phosphor-icons/react/ssr";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -44,7 +44,7 @@ export default function Particle() {
               />
             }
           >
-            <ChevronDownIcon aria-hidden="true" />
+            <CaretDownIcon aria-hidden="true" />
           </PopoverTrigger>
           <PopoverPopup align="end" className="w-84">
             <div className="mb-3">

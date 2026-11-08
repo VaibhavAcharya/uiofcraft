@@ -1,4 +1,4 @@
-import { MicIcon, PaperclipIcon } from "lucide-react";
+import { MicrophoneIcon, PaperclipIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import { Group } from "@/components/ui/group";
 import {
@@ -37,7 +37,7 @@ export default function Particle() {
                   />
                 }
               >
-                <MicIcon aria-hidden="true" />
+                <MicrophoneIcon aria-hidden="true" />
               </TooltipTrigger>
               <TooltipContent>Voice Mode</TooltipContent>
             </Tooltip>

@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpIcon, PlusIcon } from "lucide-react";
+import { ArrowUpIcon, PlusIcon } from "@phosphor-icons/react/ssr";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {

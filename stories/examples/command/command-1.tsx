@@ -1,6 +1,10 @@
 "use client";
 
-import { ArrowDownIcon, ArrowUpIcon, CornerDownLeftIcon } from "lucide-react";
+import {
+  ArrowDownIcon,
+  ArrowElbowDownLeftIcon,
+  ArrowUpIcon,
+} from "@phosphor-icons/react/ssr";
 import { Fragment, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -127,7 +131,7 @@ export default function Particle() {
               </div>
               <div className="flex items-center gap-2">
                 <Kbd>
-                  <CornerDownLeftIcon />
+                  <ArrowElbowDownLeftIcon />
                 </Kbd>
                 <span>Open</span>
               </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpIcon, PaperclipIcon } from "lucide-react";
+import { ArrowUpIcon, PaperclipIcon } from "@phosphor-icons/react/ssr";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {

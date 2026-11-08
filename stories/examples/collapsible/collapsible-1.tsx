@@ -1,4 +1,4 @@
-import { ChevronDownIcon } from "lucide-react";
+import { CaretDownIcon } from "@phosphor-icons/react/ssr";
 import {
   Collapsible,
   CollapsiblePanel,
@@ -10,7 +10,7 @@ export default function Particle() {
     <Collapsible>
       <CollapsibleTrigger className="inline-flex items-center gap-2 font-medium text-sm data-panel-open:[&_svg]:rotate-180">
         Show recovery keys
-        <ChevronDownIcon className="size-4" />
+        <CaretDownIcon className="size-4" />
       </CollapsibleTrigger>
       <CollapsiblePanel>
         <ul className="flex flex-col gap-1 py-2 text-muted-foreground text-sm">

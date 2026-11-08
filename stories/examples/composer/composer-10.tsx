@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpIcon, AtSignIcon, SquareSlashIcon } from "lucide-react";
+import { ArrowUpIcon, AtIcon, CommandIcon } from "@phosphor-icons/react/ssr";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -48,7 +48,7 @@ function TriggerActions() {
         variant="ghost"
         onClick={() => insertTrigger("@")}
       >
-        <AtSignIcon aria-hidden="true" />
+        <AtIcon aria-hidden="true" />
       </Button>
       <Button
         aria-label="Insert an action"
@@ -58,7 +58,7 @@ function TriggerActions() {
         variant="ghost"
         onClick={() => insertTrigger("/")}
       >
-        <SquareSlashIcon aria-hidden="true" />
+        <CommandIcon aria-hidden="true" />
       </Button>
     </ComposerActionGroup>
   );

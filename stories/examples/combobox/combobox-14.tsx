@@ -1,6 +1,6 @@
 "use client";
 
-import { SearchIcon } from "lucide-react";
+import { MagnifyingGlassIcon } from "@phosphor-icons/react/ssr";
 import {
   Combobox,
   ComboboxChip,
@@ -29,7 +29,7 @@ const items = [
 export default function Particle() {
   return (
     <Combobox defaultValue={[items[0], items[3]]} items={items} multiple>
-      <ComboboxChips startAddon={<SearchIcon />}>
+      <ComboboxChips startAddon={<MagnifyingGlassIcon />}>
         <ComboboxValue>
           {(value: { value: string; label: string }[]) => (
             <>

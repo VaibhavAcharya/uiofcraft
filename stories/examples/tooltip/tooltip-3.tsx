@@ -1,6 +1,10 @@
 "use client";
 
-import { BoldIcon, ItalicIcon, UnderlineIcon } from "lucide-react";
+import {
+  TextBIcon,
+  TextItalicIcon,
+  TextUnderlineIcon,
+} from "@phosphor-icons/react/ssr";
 import type { ComponentType } from "react";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import {
@@ -35,7 +39,7 @@ export default function Particle() {
           payload={BoldContent}
           render={<ToggleGroupItem aria-label="Toggle bold" value="bold" />}
         >
-          <BoldIcon aria-hidden="true" />
+          <TextBIcon aria-hidden="true" />
         </TooltipTrigger>
         <TooltipTrigger
           className="after:absolute after:left-full after:h-full after:w-1"
@@ -43,7 +47,7 @@ export default function Particle() {
           payload={ItalicContent}
           render={<ToggleGroupItem aria-label="Toggle italic" value="italic" />}
         >
-          <ItalicIcon aria-hidden="true" />
+          <TextItalicIcon aria-hidden="true" />
         </TooltipTrigger>
         <TooltipTrigger
           className="after:absolute after:left-full after:h-full after:w-1"
@@ -53,7 +57,7 @@ export default function Particle() {
             <ToggleGroupItem aria-label="Toggle underline" value="underline" />
           }
         >
-          <UnderlineIcon aria-hidden="true" />
+          <TextUnderlineIcon aria-hidden="true" />
         </TooltipTrigger>
       </ToggleGroup>
 

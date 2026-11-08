@@ -1,4 +1,4 @@
-import { FolderIcon, PlusIcon } from "lucide-react";
+import { FolderIcon, PlusIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   Card,

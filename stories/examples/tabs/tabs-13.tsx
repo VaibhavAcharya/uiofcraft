@@ -1,4 +1,4 @@
-import { HouseIcon, PanelsTopLeftIcon, SettingsIcon } from "lucide-react";
+import { GearIcon, HouseIcon, LayoutIcon } from "@phosphor-icons/react/ssr";
 import { Tabs, TabsList, TabsPanel, TabsTab } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -24,7 +24,7 @@ export default function Particle() {
             <TooltipTrigger
               render={<TabsTab aria-label="Projects" value="tab-2" />}
             >
-              <PanelsTopLeftIcon aria-hidden="true" />
+              <LayoutIcon aria-hidden="true" />
             </TooltipTrigger>
             <TooltipPopup>Projects</TooltipPopup>
           </Tooltip>
@@ -32,7 +32,7 @@ export default function Particle() {
             <TooltipTrigger
               render={<TabsTab aria-label="Settings" value="tab-3" />}
             >
-              <SettingsIcon aria-hidden="true" />
+              <GearIcon aria-hidden="true" />
             </TooltipTrigger>
             <TooltipPopup>Settings</TooltipPopup>
           </Tooltip>

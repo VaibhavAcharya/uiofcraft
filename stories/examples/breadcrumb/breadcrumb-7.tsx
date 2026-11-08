@@ -1,4 +1,4 @@
-import { DatabaseIcon } from "lucide-react";
+import { DatabaseIcon } from "@phosphor-icons/react/ssr";
 import Link from "next/link";
 import {
   Breadcrumb,

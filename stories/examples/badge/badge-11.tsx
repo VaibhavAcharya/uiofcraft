@@ -1,4 +1,4 @@
-import { CheckIcon } from "lucide-react";
+import { CheckIcon } from "@phosphor-icons/react/ssr";
 import { Badge } from "@/components/ui/badge";
 
 export default function Particle() {

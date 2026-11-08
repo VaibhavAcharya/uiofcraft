@@ -1,4 +1,4 @@
-import { PrinterIcon } from "lucide-react";
+import { PrinterIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import { Kbd, KbdGroup } from "@/components/ui/kbd";
 

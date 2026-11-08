@@ -1,7 +1,7 @@
 "use client";
 
+import { CalendarBlankIcon } from "@phosphor-icons/react/ssr";
 import { format, isValid, parse } from "date-fns";
-import { CalendarIcon } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
@@ -60,7 +60,7 @@ export default function Particle() {
               <Button aria-label="Select date" size="icon-xs" variant="ghost" />
             }
           >
-            <CalendarIcon aria-hidden="true" />
+            <CalendarBlankIcon aria-hidden="true" />
           </PopoverTrigger>
         </InputGroupAddon>
       </InputGroup>

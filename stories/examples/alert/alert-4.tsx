@@ -1,4 +1,4 @@
-import { InfoIcon } from "lucide-react";
+import { InfoIcon } from "@phosphor-icons/react/ssr";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default function Particle() {

@@ -1,6 +1,6 @@
 "use client";
 
-import { SearchIcon, XIcon } from "lucide-react";
+import { MagnifyingGlassIcon, XIcon } from "@phosphor-icons/react/ssr";
 import { useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -103,7 +103,7 @@ export default function Particle() {
         <ComboboxInput
           aria-label="Add team members"
           placeholder="Add team members…"
-          startAddon={<SearchIcon />}
+          startAddon={<MagnifyingGlassIcon />}
         />
         <ComboboxPopup>
           <ComboboxEmpty>No team members found.</ComboboxEmpty>

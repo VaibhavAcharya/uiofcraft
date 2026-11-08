@@ -1,4 +1,4 @@
-import { QrCodeIcon } from "lucide-react";
+import { QrCodeIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import { Group, GroupSeparator } from "@/components/ui/group";
 

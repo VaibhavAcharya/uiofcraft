@@ -1,6 +1,10 @@
 "use client";
 
-import { LinkIcon, MailIcon, Share2Icon } from "lucide-react";
+import {
+  EnvelopeIcon,
+  LinkIcon,
+  ShareNetworkIcon,
+} from "@phosphor-icons/react/ssr";
 import type { ComponentType } from "react";
 import { Button } from "@/components/ui/button";
 import { Group, GroupSeparator } from "@/components/ui/group";
@@ -51,7 +55,7 @@ export default function Particle() {
             />
           }
         >
-          <MailIcon aria-hidden="true" />
+          <EnvelopeIcon aria-hidden="true" />
         </TooltipTrigger>
         <GroupSeparator orientation="horizontal" />
         <TooltipTrigger
@@ -65,7 +69,7 @@ export default function Particle() {
             />
           }
         >
-          <Share2Icon aria-hidden="true" />
+          <ShareNetworkIcon aria-hidden="true" />
         </TooltipTrigger>
       </Group>
       <Tooltip handle={tooltipHandle}>

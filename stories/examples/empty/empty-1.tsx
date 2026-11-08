@@ -1,4 +1,4 @@
-import { BookIcon, RouteIcon } from "lucide-react";
+import { BookIcon, PathIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   Empty,
@@ -14,7 +14,7 @@ export default function Particle() {
     <Empty>
       <EmptyHeader>
         <EmptyMedia variant="icon">
-          <RouteIcon />
+          <PathIcon />
         </EmptyMedia>
         <EmptyTitle>No upcoming meetings</EmptyTitle>
         <EmptyDescription>Create a meeting to get started.</EmptyDescription>

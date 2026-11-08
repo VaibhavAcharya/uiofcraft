@@ -1,6 +1,10 @@
 "use client";
 
-import { LoaderCircleIcon, MicIcon, SearchIcon } from "lucide-react";
+import {
+  CircleNotchIcon,
+  MagnifyingGlassIcon,
+  MicrophoneIcon,
+} from "@phosphor-icons/react/ssr";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -29,13 +33,13 @@ export default function Particle() {
     <InputGroup>
       <InputGroupAddon>
         {isLoading ? (
-          <LoaderCircleIcon
+          <CircleNotchIcon
             aria-label="Loading..."
             className="animate-spin"
             role="status"
           />
         ) : (
-          <SearchIcon aria-hidden="true" />
+          <MagnifyingGlassIcon aria-hidden="true" />
         )}
       </InputGroupAddon>
       <InputGroupInput
@@ -56,7 +60,7 @@ export default function Particle() {
               />
             }
           >
-            <MicIcon aria-hidden="true" />
+            <MicrophoneIcon aria-hidden="true" />
           </TooltipTrigger>
           <TooltipPopup>Voice search</TooltipPopup>
         </Tooltip>

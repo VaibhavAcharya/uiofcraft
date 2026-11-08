@@ -1,6 +1,6 @@
 "use client";
 
-import { InfoIcon } from "lucide-react";
+import { InfoIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   InputGroup,
@@ -13,7 +13,11 @@ import { Popover, PopoverPopup, PopoverTrigger } from "@/components/ui/popover";
 export default function Particle() {
   return (
     <InputGroup>
-      <InputGroupInput id="email-1" placeholder="team@coss.com" type="email" />
+      <InputGroupInput
+        id="email-1"
+        placeholder="team@uiofcraft.com"
+        type="email"
+      />
       <InputGroupAddon align="block-start">
         <Label className="text-foreground" htmlFor="email-1">
           Email

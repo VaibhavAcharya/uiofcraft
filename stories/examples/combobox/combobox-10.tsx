@@ -1,6 +1,9 @@
 "use client";
 
-import { ChevronsUpDownIcon, SearchIcon } from "lucide-react";
+import {
+  CaretUpDownIcon,
+  MagnifyingGlassIcon,
+} from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   Combobox,
@@ -443,7 +446,7 @@ export default function Particle() {
         }
       >
         <ComboboxValue />
-        <ChevronsUpDownIcon className="-me-1!" />
+        <CaretUpDownIcon className="-me-1!" />
       </ComboboxTrigger>
       <ComboboxPopup aria-label="Select country">
         <div className="border-b p-2">
@@ -451,7 +454,7 @@ export default function Particle() {
             className="rounded-md before:rounded-[calc(var(--radius-md)-1px)]"
             placeholder="e.g. United Kingdom"
             showTrigger={false}
-            startAddon={<SearchIcon />}
+            startAddon={<MagnifyingGlassIcon />}
           />
         </div>
         <ComboboxEmpty>No countries found.</ComboboxEmpty>

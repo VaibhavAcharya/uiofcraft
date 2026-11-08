@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckIcon, CopyIcon } from "lucide-react";
+import { CheckIcon, CopyIcon } from "@phosphor-icons/react/ssr";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { anchoredToastManager } from "@/components/ui/toast";
@@ -30,7 +30,7 @@ export default function Particle() {
   });
 
   function handleCopy() {
-    const url = "https://coss.com";
+    const url = "https://github.com/VaibhavAcharya/uiofcraft";
     copyToClipboard(url);
   }
 

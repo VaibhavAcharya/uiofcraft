@@ -1,6 +1,6 @@
 "use client";
 
-import { SearchIcon } from "lucide-react";
+import { MagnifyingGlassIcon } from "@phosphor-icons/react/ssr";
 import {
   Combobox,
   ComboboxEmpty,
@@ -29,7 +29,7 @@ export default function Particle() {
       <ComboboxInput
         aria-label="Search items"
         placeholder="Search items…"
-        startAddon={<SearchIcon />}
+        startAddon={<MagnifyingGlassIcon />}
       />
       <ComboboxPopup>
         <ComboboxEmpty>No items found.</ComboboxEmpty>

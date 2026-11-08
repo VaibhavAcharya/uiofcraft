@@ -24,6 +24,11 @@ const preview: Preview = {
     },
   },
   initialGlobals: { theme: "light" },
+  parameters: {
+    options: {
+      storySort: { order: ["Snapshot", "Foundations", "Components"] },
+    },
+  },
 };
 
 export default preview;

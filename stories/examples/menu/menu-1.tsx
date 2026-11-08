@@ -4,7 +4,7 @@ import {
   SkipBackIcon,
   SkipForwardIcon,
   TrashIcon,
-} from "lucide-react";
+} from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   Menu,

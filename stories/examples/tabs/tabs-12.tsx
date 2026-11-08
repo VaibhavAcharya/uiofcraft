@@ -1,4 +1,4 @@
-import { HouseIcon, InboxIcon, SettingsIcon } from "lucide-react";
+import { GearIcon, HouseIcon, TrayIcon } from "@phosphor-icons/react/ssr";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsList, TabsPanel, TabsTab } from "@/components/ui/tabs";
 
@@ -10,7 +10,7 @@ export default function Particle() {
           <HouseIcon aria-hidden="true" />
         </TabsTab>
         <TabsTab aria-label="Inbox" className="size-10!" value="tab-2">
-          <InboxIcon aria-hidden="true" />
+          <TrayIcon aria-hidden="true" />
           <Badge
             className="absolute end-0 top-0 rounded-full not-in-data-active:opacity-64"
             size="sm"
@@ -19,7 +19,7 @@ export default function Particle() {
           </Badge>
         </TabsTab>
         <TabsTab aria-label="Settings" className="size-10!" value="tab-3">
-          <SettingsIcon aria-hidden="true" />
+          <GearIcon aria-hidden="true" />
         </TabsTab>
       </TabsList>
       <TabsPanel value="tab-1">

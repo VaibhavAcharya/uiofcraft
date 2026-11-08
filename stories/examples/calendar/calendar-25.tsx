@@ -1,7 +1,7 @@
 "use client";
 
+import { ClockIcon } from "@phosphor-icons/react/ssr";
 import { format } from "date-fns";
-import { ClockIcon } from "lucide-react";
 import { useState } from "react";
 import {
   Autocomplete,

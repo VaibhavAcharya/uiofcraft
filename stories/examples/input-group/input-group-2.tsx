@@ -1,4 +1,4 @@
-import { MailIcon } from "lucide-react";
+import { EnvelopeIcon } from "@phosphor-icons/react/ssr";
 import {
   InputGroup,
   InputGroupAddon,
@@ -10,7 +10,7 @@ export default function Particle() {
     <InputGroup>
       <InputGroupInput aria-label="Email" placeholder="Email" type="email" />
       <InputGroupAddon align="inline-end">
-        <MailIcon aria-hidden="true" />
+        <EnvelopeIcon aria-hidden="true" />
       </InputGroupAddon>
     </InputGroup>
   );

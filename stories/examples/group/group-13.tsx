@@ -1,9 +1,9 @@
 import {
-  ChevronDownIcon,
-  DownloadIcon,
-  EditIcon,
-  ShareIcon,
-} from "lucide-react";
+  CaretDownIcon,
+  DownloadSimpleIcon,
+  ExportIcon,
+  PencilSimpleIcon,
+} from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import { Group, GroupSeparator } from "@/components/ui/group";
 import { Menu, MenuItem, MenuPopup, MenuTrigger } from "@/components/ui/menu";
@@ -15,19 +15,19 @@ export default function Particle() {
       <GroupSeparator className="bg-primary/72" />
       <Menu>
         <MenuTrigger render={<Button aria-label="Copy options" size="icon" />}>
-          <ChevronDownIcon aria-hidden="true" className="size-4" />
+          <CaretDownIcon aria-hidden="true" className="size-4" />
         </MenuTrigger>
         <MenuPopup align="end">
           <MenuItem>
-            <ShareIcon aria-hidden="true" />
+            <ExportIcon aria-hidden="true" />
             Share link
           </MenuItem>
           <MenuItem>
-            <DownloadIcon aria-hidden="true" />
+            <DownloadSimpleIcon aria-hidden="true" />
             Download
           </MenuItem>
           <MenuItem>
-            <EditIcon aria-hidden="true" />
+            <PencilSimpleIcon aria-hidden="true" />
             Duplicate
           </MenuItem>
         </MenuPopup>

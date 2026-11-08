@@ -1,4 +1,8 @@
-import { BoldIcon, ItalicIcon, UnderlineIcon } from "lucide-react";
+import {
+  TextBIcon,
+  TextItalicIcon,
+  TextUnderlineIcon,
+} from "@phosphor-icons/react/ssr";
 import {
   ToggleGroup,
   ToggleGroupItem,
@@ -13,15 +17,15 @@ export default function Particle() {
       variant="outline"
     >
       <ToggleGroupItem aria-label="Toggle bold" value="bold">
-        <BoldIcon />
+        <TextBIcon />
       </ToggleGroupItem>
       <ToggleGroupSeparator orientation="horizontal" />
       <ToggleGroupItem aria-label="Toggle italic" value="italic">
-        <ItalicIcon />
+        <TextItalicIcon />
       </ToggleGroupItem>
       <ToggleGroupSeparator orientation="horizontal" />
       <ToggleGroupItem aria-label="Toggle underline" value="underline">
-        <UnderlineIcon />
+        <TextUnderlineIcon />
       </ToggleGroupItem>
     </ToggleGroup>
   );

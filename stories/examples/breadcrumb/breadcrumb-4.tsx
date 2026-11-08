@@ -1,4 +1,4 @@
-import { FoldersIcon } from "lucide-react";
+import { FoldersIcon } from "@phosphor-icons/react/ssr";
 import Link from "next/link";
 import {
   Breadcrumb,

@@ -1,8 +1,8 @@
 "use client";
 
 import type { DropdownProps } from "@daypicker/react";
+import { CalendarBlankIcon } from "@phosphor-icons/react/ssr";
 import { format } from "date-fns";
-import { CalendarIcon } from "lucide-react";
 import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
@@ -85,7 +85,7 @@ export default function Particle() {
           id={id}
           render={<Button className="w-full justify-start" variant="outline" />}
         >
-          <CalendarIcon aria-hidden="true" />
+          <CalendarBlankIcon aria-hidden="true" />
           {date ? format(date, "PPP") : "Pick a date"}
         </PopoverTrigger>
         <PopoverPopup>

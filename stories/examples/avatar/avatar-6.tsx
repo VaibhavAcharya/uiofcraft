@@ -1,4 +1,4 @@
-import { UserIcon } from "lucide-react";
+import { UserIcon } from "@phosphor-icons/react/ssr";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 export default function Particle() {

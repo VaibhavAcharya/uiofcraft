@@ -1,6 +1,6 @@
 "use client";
 
-import { DownloadIcon, XIcon } from "lucide-react";
+import { DownloadSimpleIcon, XIcon } from "@phosphor-icons/react/ssr";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Group, GroupSeparator, GroupText } from "@/components/ui/group";
@@ -130,7 +130,7 @@ export default function Particle() {
         </Group>
       ) : (
         <Button onClick={handleDownload} variant="outline">
-          <DownloadIcon aria-hidden="true" />
+          <DownloadSimpleIcon aria-hidden="true" />
           Download
         </Button>
       )}

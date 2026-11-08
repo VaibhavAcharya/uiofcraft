@@ -1,6 +1,11 @@
 "use client";
 
-import { Code2Icon, GlobeIcon, LayersIcon, ZapIcon } from "lucide-react";
+import {
+  CodeIcon,
+  GlobeIcon,
+  LightningIcon,
+  StackIcon,
+} from "@phosphor-icons/react/ssr";
 import {
   Select,
   SelectItem,
@@ -10,10 +15,10 @@ import {
 } from "@/components/ui/select";
 
 const items = [
-  { icon: LayersIcon, label: "Components", value: "components" },
-  { icon: ZapIcon, label: "Performance", value: "performance" },
+  { icon: StackIcon, label: "Components", value: "components" },
+  { icon: LightningIcon, label: "Performance", value: "performance" },
   { icon: GlobeIcon, label: "Network", value: "network" },
-  { icon: Code2Icon, label: "Development", value: "development" },
+  { icon: CodeIcon, label: "Development", value: "development" },
 ];
 
 export default function Particle() {

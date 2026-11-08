@@ -1,4 +1,4 @@
-import { ChevronDownIcon, TrashIcon } from "lucide-react";
+import { CaretDownIcon, TrashIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import {
   Collapsible,
@@ -16,7 +16,7 @@ export default function Particle() {
             className="data-panel-open:[&_svg]:rotate-180"
             render={<Button variant="ghost" />}
           >
-            <ChevronDownIcon className="size-4" />
+            <CaretDownIcon className="size-4" />
             Section header
           </CollapsibleTrigger>
           <Button aria-label="Delete" size="icon" variant="ghost">

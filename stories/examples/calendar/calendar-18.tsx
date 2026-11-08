@@ -1,6 +1,6 @@
 "use client";
 
-import { ClockIcon } from "lucide-react";
+import { ClockIcon } from "@phosphor-icons/react/ssr";
 import { useState } from "react";
 import { Calendar } from "@/components/ui/calendar";
 import { Field, FieldLabel } from "@/components/ui/field";

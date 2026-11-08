@@ -1,6 +1,6 @@
 "use client";
 
-import { SearchIcon } from "lucide-react";
+import { MagnifyingGlassIcon } from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import { Group, GroupSeparator } from "@/components/ui/group";
 import { Input } from "@/components/ui/input";
@@ -44,7 +44,7 @@ export default function Particle() {
       <Input
         aria-label="URL"
         className="flex-1"
-        defaultValue="coss.com"
+        defaultValue="uiofcraft.com"
         type="text"
       />
       <GroupSeparator />
@@ -62,7 +62,7 @@ export default function Particle() {
       </Select>
       <GroupSeparator />
       <Button aria-label="Search" size="icon" variant="outline">
-        <SearchIcon aria-hidden="true" />
+        <MagnifyingGlassIcon aria-hidden="true" />
       </Button>
     </Group>
   );

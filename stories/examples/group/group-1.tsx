@@ -1,12 +1,12 @@
 import {
   ArchiveIcon,
-  EditIcon,
-  EllipsisIcon,
+  DotsThreeIcon,
+  ExportIcon,
   FilesIcon,
-  FilmIcon,
-  ShareIcon,
+  FilmStripIcon,
+  PencilSimpleIcon,
   TrashIcon,
-} from "lucide-react";
+} from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 import { Group, GroupSeparator } from "@/components/ui/group";
 import { Menu, MenuItem, MenuPopup, MenuTrigger } from "@/components/ui/menu";
@@ -20,7 +20,7 @@ export default function Particle() {
       </Button>
       <GroupSeparator />
       <Button variant="outline">
-        <FilmIcon aria-hidden="true" />
+        <FilmStripIcon aria-hidden="true" />
         Media
       </Button>
       <GroupSeparator />
@@ -28,11 +28,11 @@ export default function Particle() {
         <MenuTrigger
           render={<Button aria-label="Menu" size="icon" variant="outline" />}
         >
-          <EllipsisIcon className="size-4" />
+          <DotsThreeIcon className="size-4" />
         </MenuTrigger>
         <MenuPopup align="end">
           <MenuItem>
-            <EditIcon aria-hidden="true" />
+            <PencilSimpleIcon aria-hidden="true" />
             Edit
           </MenuItem>
           <MenuItem>
@@ -40,7 +40,7 @@ export default function Particle() {
             Archive
           </MenuItem>
           <MenuItem>
-            <ShareIcon aria-hidden="true" />
+            <ExportIcon aria-hidden="true" />
             Share
           </MenuItem>
           <MenuItem variant="destructive">

@@ -1,10 +1,10 @@
 import {
-  ChevronDownIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  ChevronUpIcon,
+  CaretDownIcon,
+  CaretLeftIcon,
+  CaretRightIcon,
+  CaretUpIcon,
   CircleIcon,
-} from "lucide-react";
+} from "@phosphor-icons/react/ssr";
 import { Button } from "@/components/ui/button";
 
 export default function Particle() {
@@ -16,7 +16,7 @@ export default function Particle() {
         size="icon"
         variant="outline"
       >
-        <ChevronUpIcon aria-hidden="true" />
+        <CaretUpIcon aria-hidden="true" />
       </Button>
       <Button
         aria-label="Pan camera left"
@@ -24,13 +24,13 @@ export default function Particle() {
         size="icon"
         variant="outline"
       >
-        <ChevronLeftIcon aria-hidden="true" />
+        <CaretLeftIcon aria-hidden="true" />
       </Button>
       <div aria-hidden="true" className="flex items-center justify-center">
         <CircleIcon className="size-4 opacity-80" />
       </div>
       <Button aria-label="Pan camera right" size="icon" variant="outline">
-        <ChevronRightIcon aria-hidden="true" />
+        <CaretRightIcon aria-hidden="true" />
       </Button>
       <Button
         aria-label="Pan camera down"
@@ -38,7 +38,7 @@ export default function Particle() {
         size="icon"
         variant="outline"
       >
-        <ChevronDownIcon aria-hidden="true" />
+        <CaretDownIcon aria-hidden="true" />
       </Button>
     </div>
   );

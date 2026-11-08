@@ -2,13 +2,13 @@
 
 import {
   ArrowDownIcon,
+  ArrowElbowDownLeftIcon,
   ArrowLeftIcon,
   ArrowUpIcon,
-  CircleQuestionMarkIcon,
-  CornerDownLeftIcon,
-  SearchIcon,
-  SparklesIcon,
-} from "lucide-react";
+  MagnifyingGlassIcon,
+  QuestionIcon,
+  SparkleIcon,
+} from "@phosphor-icons/react/ssr";
 import Link from "next/link";
 import {
   Fragment,
@@ -376,7 +376,7 @@ export default function PCommand2() {
                   size="sm"
                   variant="ghost"
                 >
-                  <SparklesIcon className="size-4 sm:size-3.5" />
+                  <SparkleIcon className="size-4 sm:size-3.5" />
                   Ask AI
                   <Kbd className="ms-0.5 -me-1.5">Tab</Kbd>
                 </Button>
@@ -386,7 +386,7 @@ export default function PCommand2() {
                   {searchQuery.trim() && (
                     <div className="wrap-break-word flex flex-col flex-wrap items-center gap-2">
                       <EmptyMedia variant="icon">
-                        <SearchIcon />
+                        <MagnifyingGlassIcon />
                       </EmptyMedia>
                       <p>No results found.</p>
                       <p>
@@ -443,7 +443,7 @@ export default function PCommand2() {
                       </div>
                       <div className="flex items-center gap-2">
                         <Kbd>
-                          <CornerDownLeftIcon />
+                          <ArrowElbowDownLeftIcon />
                         </Kbd>
                         <span>Open</span>
                       </div>
@@ -471,7 +471,7 @@ export default function PCommand2() {
                       className="pointer-events-none absolute inset-y-0 start-px z-10 flex items-center ps-[calc(--spacing(3)-1px)] opacity-80 has-[+[data-size=sm]]:ps-[calc(--spacing(2.5)-1px)] [&_svg:not([class*='size-'])]:size-4.5 sm:[&_svg:not([class*='size-'])]:size-4 [&_svg]:-mx-0.5"
                       data-slot="autocomplete-start-addon"
                     >
-                      <SparklesIcon />
+                      <SparkleIcon />
                     </div>
                     <Input
                       aria-label="AI query input"
@@ -596,14 +596,14 @@ export default function PCommand2() {
                 ) : aiState.response ? (
                   <div className="flex items-center gap-2">
                     <div className="flex h-5 items-center justify-center">
-                      <CircleQuestionMarkIcon className="size-3" />
+                      <QuestionIcon className="size-3" />
                     </div>
                     You asked: <span>&quot;{aiState.submittedQuery}&quot;</span>
                   </div>
                 ) : (
                   <div className="flex items-center gap-2">
                     <Kbd>
-                      <CornerDownLeftIcon />
+                      <ArrowElbowDownLeftIcon />
                     </Kbd>
                     <span>Ask AI</span>
                   </div>

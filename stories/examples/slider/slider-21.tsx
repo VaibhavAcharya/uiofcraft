@@ -1,6 +1,6 @@
 "use client";
 
-import { RotateCcwIcon } from "lucide-react";
+import { ArrowCounterClockwiseIcon } from "@phosphor-icons/react/ssr";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Fieldset, FieldsetLegend } from "@/components/ui/fieldset";
@@ -64,7 +64,10 @@ export default function Particle() {
         onClick={() => setValues(defaultValues)}
         variant="outline"
       >
-        <RotateCcwIcon aria-hidden="true" className="-ms-1 opacity-60" />
+        <ArrowCounterClockwiseIcon
+          aria-hidden="true"
+          className="-ms-1 opacity-60"
+        />
         Reset
       </Button>
     </Fieldset>

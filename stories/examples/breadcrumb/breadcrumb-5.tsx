@@ -1,4 +1,4 @@
-import { ComponentIcon, HomeIcon } from "lucide-react";
+import { DiamondsFourIcon, HouseIcon } from "@phosphor-icons/react/ssr";
 import Link from "next/link";
 import {
   Breadcrumb,
@@ -18,7 +18,7 @@ export default function Particle() {
             className="inline-flex items-center gap-1.5"
             render={<Link href="/" />}
           >
-            <HomeIcon aria-hidden="true" className="size-4" />
+            <HouseIcon aria-hidden="true" className="size-4" />
             Home
           </BreadcrumbLink>
         </BreadcrumbItem>
@@ -28,7 +28,7 @@ export default function Particle() {
             className="inline-flex items-center gap-1.5"
             render={<Link href="/docs/" />}
           >
-            <ComponentIcon aria-hidden="true" className="size-4" />
+            <DiamondsFourIcon aria-hidden="true" className="size-4" />
             Components
           </BreadcrumbLink>
         </BreadcrumbItem>

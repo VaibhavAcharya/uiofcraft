@@ -1,8 +1,8 @@
 "use client";
 
 import type { DateRange } from "@daypicker/react";
+import { CalendarBlankIcon } from "@phosphor-icons/react/ssr";
 import { format } from "date-fns";
-import { CalendarIcon } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
@@ -16,7 +16,7 @@ export default function Particle() {
       <PopoverTrigger
         render={<Button className="w-full justify-start" variant="outline" />}
       >
-        <CalendarIcon aria-hidden="true" />
+        <CalendarBlankIcon aria-hidden="true" />
         {date?.from ? (
           date.to ? (
             <>

@@ -30,17 +30,19 @@ import { Dialog, DialogPopup, DialogTrigger } from "uiofcraft/dialog";
 
 Dark mode follows the `dark` class on an ancestor, usually `<html>`.
 
+Components use [Phosphor](https://phosphoricons.com) icons from `@phosphor-icons/react/ssr`. Use the same package for icons in your app so they match.
+
 ## Exports
 
 | Path | What |
 |---|---|
-| `uiofcraft` | All components, `useMediaQuery` and `cn` |
+| `uiofcraft` | All components, `useMediaQuery`, `useCopyToClipboard` and `cn` |
 | `uiofcraft/<component>` | One component file, for example `uiofcraft/button` |
 | `uiofcraft/craft/<component>` | One of my own components |
 | `uiofcraft/hooks/<hook>` | One hook, for example `uiofcraft/hooks/use-media-query` |
 | `uiofcraft/styles.css` | Fonts and theme |
 | `uiofcraft/theme.css` | Theme tokens, base styles and `@source` for the components |
-| `uiofcraft/fonts.css` | Inter and Geist Mono |
+| `uiofcraft/fonts.css` | DM Sans and Lilex |
 
 ## Develop
 

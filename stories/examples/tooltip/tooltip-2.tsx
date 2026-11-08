@@ -1,4 +1,8 @@
-import { BoldIcon, ItalicIcon, UnderlineIcon } from "lucide-react";
+import {
+  TextBIcon,
+  TextItalicIcon,
+  TextUnderlineIcon,
+} from "@phosphor-icons/react/ssr";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import {
   Tooltip,
@@ -15,7 +19,7 @@ export default function Particle() {
           <TooltipTrigger
             render={<ToggleGroupItem aria-label="Toggle bold" value="bold" />}
           >
-            <BoldIcon />
+            <TextBIcon />
           </TooltipTrigger>
           <TooltipPopup>Bold</TooltipPopup>
         </Tooltip>
@@ -25,7 +29,7 @@ export default function Particle() {
               <ToggleGroupItem aria-label="Toggle italic" value="italic" />
             }
           >
-            <ItalicIcon />
+            <TextItalicIcon />
           </TooltipTrigger>
           <TooltipPopup>Italic</TooltipPopup>
         </Tooltip>
@@ -38,7 +42,7 @@ export default function Particle() {
               />
             }
           >
-            <UnderlineIcon />
+            <TextUnderlineIcon />
           </TooltipTrigger>
           <TooltipPopup>Underline</TooltipPopup>
         </Tooltip>

@@ -1,4 +1,9 @@
-import { CopyIcon, PencilIcon, ShareIcon, TrashIcon } from "lucide-react";
+import {
+  CopyIcon,
+  ExportIcon,
+  PencilSimpleIcon,
+  TrashIcon,
+} from "@phosphor-icons/react/ssr";
 import {
   ContextMenu,
   ContextMenuItem,
@@ -16,7 +21,7 @@ export default function Particle() {
       </ContextMenuTrigger>
       <ContextMenuPopup>
         <ContextMenuItem>
-          <PencilIcon aria-hidden="true" />
+          <PencilSimpleIcon aria-hidden="true" />
           Edit
           <ContextMenuShortcut>⌘E</ContextMenuShortcut>
         </ContextMenuItem>
@@ -26,7 +31,7 @@ export default function Particle() {
           <ContextMenuShortcut>⌘C</ContextMenuShortcut>
         </ContextMenuItem>
         <ContextMenuItem>
-          <ShareIcon aria-hidden="true" />
+          <ExportIcon aria-hidden="true" />
           Share
         </ContextMenuItem>
         <ContextMenuSeparator />

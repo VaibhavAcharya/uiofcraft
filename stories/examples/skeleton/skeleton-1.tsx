@@ -1,6 +1,6 @@
 "use client";
 
-import { UserRoundPlusIcon, UsersRoundIcon } from "lucide-react";
+import { UserPlusIcon, UsersIcon } from "@phosphor-icons/react/ssr";
 import { useEffect, useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
@@ -62,7 +62,7 @@ function UserCard({ delay, user }: { delay: number; user: (typeof users)[0] }) {
         <div className="flex items-center gap-3 text-muted-foreground text-xs">
           <span className="truncate">{user.role}</span>
           <div className="flex min-w-0 items-center gap-1">
-            <UsersRoundIcon className="size-3 shrink-0" />
+            <UsersIcon className="size-3 shrink-0" />
             <span className="truncate">
               {user.followers}
               <span className="max-sm:hidden"> followers</span>
@@ -71,7 +71,7 @@ function UserCard({ delay, user }: { delay: number; user: (typeof users)[0] }) {
         </div>
       </div>
       <Button size="xs">
-        <UserRoundPlusIcon />
+        <UserPlusIcon />
         Follow
       </Button>
     </>

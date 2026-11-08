@@ -1,6 +1,6 @@
 "use client";
 
-import { EyeIcon, EyeOffIcon } from "lucide-react";
+import { EyeIcon, EyeSlashIcon } from "@phosphor-icons/react/ssr";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -32,7 +32,7 @@ export default function Particle() {
               />
             }
           >
-            {showPassword ? <EyeOffIcon /> : <EyeIcon />}
+            {showPassword ? <EyeSlashIcon /> : <EyeIcon />}
           </TooltipTrigger>
           <TooltipPopup>
             {showPassword ? "Hide password" : "Show password"}
