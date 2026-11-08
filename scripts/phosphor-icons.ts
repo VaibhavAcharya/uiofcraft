@@ -112,7 +112,7 @@ const iconMap: Record<string, string> = {
 };
 
 const sourceImport =
-  /import\s*\{([^}]*)\}\s*from\s*"(?:lucide-react|@remixicon\/react)";\n?/g;
+  /import\s*\{([^}]*)\}\s*from\s*"(?:lucide-react|@remixicon\/react)";?\n?/g;
 
 export function toPhosphor(code: string, file: string): string {
   const names = [...code.matchAll(sourceImport)].flatMap((match) =>
@@ -145,13 +145,15 @@ const sourceFiles = (dir: string): string[] =>
     return /\.tsx?$/.test(entry) ? [path] : [];
   });
 
-let changed = 0;
-for (const file of process.argv.slice(2).flatMap(sourceFiles)) {
-  const code = readFileSync(file, "utf8");
-  const next = toPhosphor(code, file);
-  if (next !== code) {
-    writeFileSync(file, next);
-    changed++;
+if (import.meta.main) {
+  let changed = 0;
+  for (const file of process.argv.slice(2).flatMap(sourceFiles)) {
+    const code = readFileSync(file, "utf8");
+    const next = toPhosphor(code, file);
+    if (next !== code) {
+      writeFileSync(file, next);
+      changed++;
+    }
   }
+  console.log(`Switched ${changed} files to Phosphor icons`);
 }
-console.log(`Switched ${changed} files to Phosphor icons`);

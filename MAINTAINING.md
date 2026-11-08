@@ -108,6 +108,16 @@ Put it in `src/components/craft/<name>.tsx`, not in `src/components/ui`. The cos
 
 Apps import it from `uiofcraft` or `uiofcraft/craft/<name>`.
 
+## Docs for apps
+
+`docs` ships in the npm package, so apps and their agents can read it from `node_modules/uiofcraft/docs`. The README has a snippet for the app's `AGENTS.md`.
+
+- `docs/usage.md`: setup and rules for using the components. Written by hand. Update it when setup, theming, icons or composition change.
+- `docs/components`: one page per component and an index (`README.md`). `pnpm generate-docs` builds the package, then writes these pages from the coss ui docs (`apps/ui/content/docs/components` in `github.com/cosscom/ui`). It keeps every section except Installation, Examples and Changelog, puts the example code in place of the coss previews, rewrites imports to `uiofcraft`, switches icons to Phosphor and renames coss to uiofcraft. The export list on each page comes from the built `dist`. Do not edit these pages by hand.
+- Sidebar has no coss docs page, so its page uses the description in `handWritten` in `scripts/generate-docs.ts` and the code from `stories/sidebar-example.tsx`.
+
+`pnpm generate-docs` fails when a component in `src/components/ui` has no page.
+
 ## Differences from coss ui
 
 uiofcraft starts from coss ui and changes these things. A coss update can undo the ones marked "Yes", so check them after every update.
@@ -119,7 +129,7 @@ uiofcraft starts from coss ui and changes these things. A coss update can undo t
 | Theme split into `fonts.css`, `theme.css` and `index.css`, with `@source "../components"` in `theme.css` | `src/styles` | `add @coss/style` keeps the split, but adds font imports to `theme.css` | See "Update the theme" below |
 | Dependencies the coss CLI adds but nothing here uses: `cn`, `geist`, `tw-animate-css`, `@fontsource-variable/inter`, `lucide-react` | `package.json` | Yes, by `add @coss/style` and possibly by single components | `pnpm remove` them |
 | `useCopyToClipboard` hook | `src/hooks/use-copy-to-clipboard.ts` | No. It comes from the coss registry (`@coss/use-copy-to-clipboard`), it is just not part of `@coss/ui` | Nothing |
-| Example text says uiofcraft instead of coss | `stories/examples` | No, `pnpm generate-stories` does it (`rebrand`) | Nothing |
+| Example text says uiofcraft instead of coss | `stories/examples`, `docs/components` | No, `pnpm generate-stories` and `pnpm generate-docs` do it (`rebrand`) | Nothing |
 
 ## Update from coss ui
 
@@ -140,6 +150,7 @@ Then:
 2. Remove the dependencies from that table if they show up in `package.json` again.
 3. A new component also needs an export line in `src/index.ts`.
 4. Run `pnpm generate-stories` to pick up new or changed examples.
+5. Run `pnpm generate-docs` to update the component docs.
 
 ### Update the theme
 

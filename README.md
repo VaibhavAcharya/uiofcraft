@@ -32,6 +32,16 @@ Dark mode follows the `dark` class on an ancestor, usually `<html>`.
 
 Components use [Phosphor](https://phosphoricons.com) icons from `@phosphor-icons/react/ssr`. Use the same package for icons in your app so they match.
 
+## For AI agents
+
+The package ships a usage guide and a page for every component in `docs`. Add this to the `AGENTS.md` (or `CLAUDE.md`) of an app that uses uiofcraft:
+
+```md
+## UI
+
+UI comes from the `uiofcraft` package. Before you add or change UI, read `node_modules/uiofcraft/docs/usage.md`, then the pages in `node_modules/uiofcraft/docs/components` for the components you use. Use those components and the theme tokens instead of writing new ones.
+```
+
 ## Exports
 
 | Path | What |

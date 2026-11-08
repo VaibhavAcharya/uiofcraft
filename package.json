@@ -4,7 +4,8 @@
   "description": "Shared React components, styles and fonts, built on coss ui",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "docs"
   ],
   "sideEffects": [
     "**/*.css"
@@ -80,7 +81,8 @@
     "dev": "tsdown --watch",
     "generate-stories": "node scripts/generate-stories.ts && node scripts/phosphor-icons.ts stories && biome check --write stories",
     "icons": "node scripts/phosphor-icons.ts src stories && biome check --write src stories",
-    "test:stories": "storybook build --output-dir storybook-static --quiet && node scripts/test-stories.ts"
+    "test:stories": "storybook build --output-dir storybook-static --quiet && node scripts/test-stories.ts",
+    "generate-docs": "tsdown && node scripts/generate-docs.ts"
   },
   "repository": {
     "type": "git",

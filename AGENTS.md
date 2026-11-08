@@ -8,6 +8,7 @@ React component library on npm (`uiofcraft`), built on coss ui (Base UI + Tailwi
 - `src/components/craft`: our own components. Exported as `uiofcraft/craft/<name>` and from `src/index.ts`.
 - `src/index.ts`: barrel export, one line per component file.
 - `src/styles`: `theme.css` (tokens, base styles, `@source "../components"`), `fonts.css`, `index.css` (both).
+- `docs`: published with the package for apps and their agents. `docs/usage.md` is written by hand. `docs/components` comes from `pnpm generate-docs` (`scripts/generate-docs.ts`) and is not edited by hand. Update `docs/usage.md` when setup, theming, icons or composition change.
 - `stories`: Storybook stories, not published. `stories/examples` and `*.generated.stories.tsx` come from `pnpm generate-stories` (`scripts/generate-stories.ts`) and are not edited by hand.
 
 ## Differences from coss ui
