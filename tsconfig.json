@@ -9,8 +9,9 @@
     "skipLibCheck": true,
     "verbatimModuleSyntax": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "next/link": ["./.storybook/next-link.tsx"]
     }
   },
-  "include": ["src", "stories", ".storybook"]
+  "include": ["src", "stories", ".storybook", "scripts"]
 }

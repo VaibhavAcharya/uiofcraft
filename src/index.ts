@@ -54,5 +54,6 @@ export * from "./components/ui/toggle";
 export * from "./components/ui/toggle-group";
 export * from "./components/ui/toolbar";
 export * from "./components/ui/tooltip";
+export * from "./hooks/use-copy-to-clipboard";
 export * from "./hooks/use-media-query";
 export * from "./lib/utils";

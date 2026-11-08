@@ -8,7 +8,7 @@ React component library on npm (`uiofcraft`), built on coss ui (Base UI + Tailwi
 - `src/components/craft`: our own components. Exported as `uiofcraft/craft/<name>` and from `src/index.ts`.
 - `src/index.ts`: barrel export, one line per component file.
 - `src/styles`: `theme.css` (tokens, base styles, `@source "../components"`), `fonts.css`, `index.css` (both).
-- `stories`: Storybook stories, not published.
+- `stories`: Storybook stories, not published. `stories/examples` and `*.generated.stories.tsx` come from `pnpm generate-stories` (`scripts/generate-stories.ts`) and are not edited by hand.
 
 ## Build
 
@@ -18,4 +18,4 @@ React component library on npm (`uiofcraft`), built on coss ui (Base UI + Tailwi
 
 ## Checks
 
-Run `pnpm typecheck`, `pnpm lint`, `pnpm build` and `pnpm build-storybook` before handing back work.
+Run `pnpm typecheck`, `pnpm lint`, `pnpm build` and `pnpm build-storybook` before handing back work. A passing Storybook build does not mean the stories render, so open the changed stories too.

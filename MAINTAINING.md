@@ -11,6 +11,18 @@ pnpm storybook
 
 Open http://localhost:6008. Edits in `src` reload right away. The toolbar switches between light and dark. `Foundations` shows the fonts and color tokens, so start there when you try new fonts or colors.
 
+Every component has stories. Most come from the coss ui examples:
+
+- `stories/examples/<component>/`: the coss examples, with imports rewritten to this repo. Biome lint is off for them.
+- `stories/<component>.generated.stories.tsx`: one story per example.
+- `stories/preview.tsx`: wraps each example with the width coss uses on its docs site.
+
+`pnpm generate-stories` downloads the examples again and rewrites both. Do not edit those files by hand. To change how an example is generated, edit `scripts/generate-stories.ts`. It also passes props to the examples that need them and maps the coss `navigation` examples to Segmented Control.
+
+Label and Sidebar have no coss examples, so their stories are written by hand in `stories/label.stories.tsx` and `stories/sidebar.stories.tsx`. Stories for your own components are also written by hand.
+
+Storybook wraps every story in `ToastProvider` and `AnchoredToastProvider` (`.storybook/preview.tsx`). Some examples import `next/link`, which `.storybook/next-link.tsx` replaces with a plain `<a>`.
+
 ### In a real app
 
 Build in watch mode in this repo:
@@ -104,7 +116,7 @@ pnpm dlx shadcn@latest add @coss/<component> --overwrite
 pnpm format
 ```
 
-Check the diff against the table under "Change a coss component" and apply your changes again. A new component also needs an export line in `src/index.ts`. To update the theme, run `add @coss/style`. It writes into `src/styles/theme.css` (set in `components.json`), so check the diff for your token and font changes, and move any imports it adds there to `fonts.css`.
+Check the diff against the table under "Change a coss component" and apply your changes again. A new component also needs an export line in `src/index.ts`. Then run `pnpm generate-stories` to pick up new or changed examples. To update the theme, run `add @coss/style`. It writes into `src/styles/theme.css` (set in `components.json`), so check the diff for your token and font changes, and move any imports it adds there to `fonts.css`.
 
 ## Checks
 

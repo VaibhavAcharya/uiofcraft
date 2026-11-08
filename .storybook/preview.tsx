@@ -1,4 +1,5 @@
 import type { Decorator, Preview } from "@storybook/react-vite";
+import { AnchoredToastProvider, ToastProvider } from "@/components/ui/toast";
 import "./storybook.css";
 
 const withTheme: Decorator = (Story, { globals }) => {
@@ -6,8 +7,16 @@ const withTheme: Decorator = (Story, { globals }) => {
   return <Story />;
 };
 
+const withToasts: Decorator = (Story) => (
+  <ToastProvider>
+    <AnchoredToastProvider>
+      <Story />
+    </AnchoredToastProvider>
+  </ToastProvider>
+);
+
 const preview: Preview = {
-  decorators: [withTheme],
+  decorators: [withTheme, withToasts],
   globalTypes: {
     theme: {
       description: "Color theme",
